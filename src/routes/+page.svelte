@@ -1,5 +1,5 @@
 <script>
-	import { NavBar, Hero, About, Gallery, TheMenu, News } from '$lib';
+	import { NavBar, Hero, About, Gallery, TheMenu, News, Testimonials } from '$lib';
 </script>
 
 <div class="bg-color-background min-w-screen min-h-100 ">
@@ -11,4 +11,5 @@
 	<Gallery />
 	<TheMenu />
 	<News />
+	<Testimonials />
 </div>

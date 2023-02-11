@@ -12,7 +12,7 @@
 			</p>
 			<div class="ml-10 mr-10 mt-10 flex justify-end">
 				<button
-					class="text-color-cream font-merriweather rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 text-right"
+					class="text-color-cream font-merriweather rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 text-right font-sans"
 					>Read More</button
 				>
 			</div>
