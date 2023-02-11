@@ -9,10 +9,12 @@
 				magnam, enim quis perspiciatis. Unde nulla laborum deserunt repellat, est voluptates
 				molestiae eligendi reiciendis sunt placeat, quia debitis?
 			</p>
-			<button
-				class="text-color-background font-merriweather mt-10 rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2"
-				>Show All Menu</button
-			>
+			<div class="justify-left flex">
+				<button
+					class="text-color-background font-merriweather mt-10 rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2"
+					>Show All Menu</button
+				>
+			</div>
 			<div class="h-full w-full bg-[url('img/ill-1.svg')] bg-no-repeat" />
 		</div>
 		<div class=" col-span-1 row-span-2 mt-20 ">
@@ -66,4 +68,13 @@
 			</div>
 		</div>
 	</div>
+	<br />
+	<div class="text-color-gray-text font-merriweather m-auto mt-4 flex w-[95%] justify-between">
+		<h2>Menu</h2>
+		<h2>03</h2>
+	</div>
+	<div
+		class="border-b-color-gray-text m-auto mt-4 w-[95%] border-t-0 border-l-0 border-r-0 border-b-2"
+	/>
+	<br />
 </section>
