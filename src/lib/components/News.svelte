@@ -1,4 +1,7 @@
-<section id="news" class="bg-color-cream text-color-background m-auto w-full pt-20">
+<section
+	id="news"
+	class="text-color-background m-auto w-full bg-gradient-to-t from-[#1B1B1B_50%] to-[#EEE0D3_50%] pt-20"
+>
 	<div class="m-auto flex w-[95%] justify-center gap-6 pb-10">
 		<div class="bg-color-green text-color-cream h-[60vmin] w-3/5 rounded-3xl">
 			<div class="ml-10 mr-10 mt-5 flex items-center justify-around">
