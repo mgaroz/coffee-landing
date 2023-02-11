@@ -1,6 +1,5 @@
 <script>
-	import { NavBar, Hero, About, Gallery } from '$lib';
-	import TheMenu from '../lib/components/TheMenu.svelte';
+	import { NavBar, Hero, About, Gallery, TheMenu } from '$lib';
 </script>
 
 <div class="bg-color-background min-w-screen min-h-100 ">
