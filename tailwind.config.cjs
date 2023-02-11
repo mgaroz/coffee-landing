@@ -15,7 +15,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
-        'merriweather': ['Merriweather, serif;']
+        'merriweather': ['Merriweather, serif;'],
+        'playfair': ['Playfair Display, serif']
       },
     },
   },
