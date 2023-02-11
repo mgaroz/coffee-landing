@@ -3,7 +3,7 @@
 		<div class="m-auto h-full w-2/3">
 			<div class="flex justify-center">
 				<h1 class="text-color-white font-merriweather w-[85%] pt-[20vmin] text-7xl uppercase">
-					The fully standout coffee experience
+					A truly outstanding coffee experience
 				</h1>
 			</div>
 			<div>
