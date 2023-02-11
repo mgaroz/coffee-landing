@@ -5,5 +5,6 @@ import Gallery from './components/Gallery.svelte'
 import TheMenu from './components/TheMenu.svelte'
 import News from './components/News.svelte'
 import Testimonials from './components/Testimonials.svelte'
+import Contact from './components/Contact.svelte'
 
-export { NavBar, Hero, About, Gallery, TheMenu, News, Testimonials }
+export { NavBar, Hero, About, Gallery, TheMenu, News, Testimonials, Contact }

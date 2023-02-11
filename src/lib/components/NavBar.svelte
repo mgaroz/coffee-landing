@@ -1,6 +1,8 @@
 <nav class="fixed left-0 right-0 z-10 m-auto mr-auto ml-auto w-[95%] bg-[#ffffff00]">
 	<div class="flex w-full items-center justify-between bg-[#ffffff00] pt-2 pb-2">
-		<div class="font-merriweather text-color-white">Logo</div>
+		<div class="font-merriweather text-color-white">
+			<img src="img/logo.png" alt="logo" class="max-h-12" />
+		</div>
 		<div class="text-color-white flex gap-8">
 			<a href="/">Home</a>
 			<a href="/">About</a>
