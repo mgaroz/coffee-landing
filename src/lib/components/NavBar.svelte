@@ -11,7 +11,9 @@
 >
 	<div class="mr-auto ml-auto flex w-[95%] items-center justify-between bg-[#ffffff00] pt-2 pb-2">
 		<div class="font-merriweather text-color-white">
-			<img src="img/logo.png" alt="logo" class="max-h-12" />
+			<a href="/">
+				<img src="img/logo.png" alt="logo" class="max-h-12" />
+			</a>
 		</div>
 		<div class="text-color-white flex gap-8">
 			<a href="/" on:click={() => (active = 'home')} class={active === 'home' ? 'active' : 'attiv'}
@@ -40,7 +42,7 @@
 		</div>
 		<div class="flex gap-2">
 			<button
-				class="text-color-white hover:bg-color-white hover:text-color-background rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 duration-150"
+				class="text-color-white hover:bg-color-white hover:text-color-background hover:border-color-white rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 duration-150"
 				>Login</button
 			>
 			<button
@@ -104,10 +106,5 @@
 
 	.attiv:hover:before {
 		width: 35%;
-	}
-
-	.attiv:hover::after,
-	.attiv:focus::after {
-		transform: scale(1);
 	}
 </style>

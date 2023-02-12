@@ -2,7 +2,13 @@
 	<div class="text-color-white font-merriweather m-auto w-[95%] pt-10">
 		<div class="grid grid-cols-4 gap-8">
 			<div class="w-full self-start">
-				<img src="img/logo.png" alt="logo_footer" class="m-auto h-auto w-[15vmin]" />
+				<a href="/">
+					<img
+						src="img/logo.png"
+						alt="logo_footer"
+						class="m-auto h-auto w-[15vmin] cursor-pointer"
+					/></a
+				>
 			</div>
 			<div class="border-r-2">
 				<p class="p-6 leading-loose">
@@ -13,11 +19,11 @@
 			</div>
 			<div class="ml-10 mr-10 self-center text-center">
 				<ul class="font-playfair columns-2 leading-loose">
-					<li><a href="/">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#menu">Menu</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="/" class="duration-150 hover:underline">Home</a></li>
+					<li><a href="#about" class="duration-150 hover:underline">About</a></li>
+					<li><a href="#menu" class="duration-150 hover:underline">Menu</a></li>
+					<li><a href="#news" class="duration-150 hover:underline">News</a></li>
+					<li><a href="#contact" class="duration-150 hover:underline">Contact</a></li>
 				</ul>
 			</div>
 			<div class="font-playfair w-[30vmin] self-center">

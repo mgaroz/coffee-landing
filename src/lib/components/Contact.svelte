@@ -9,7 +9,7 @@
 		<div class="font-merriweather flex w-1/3 flex-col items-center justify-center text-3xl">
 			<div class="flex w-full flex-col gap-4 text-3xl">
 				<div class="flex justify-between">
-					<p><span class="text-color-gray-text">Tel</span></p>
+					<p><span class="text-color-gray-text">Phone</span></p>
 					<div class="w-[250px] text-left">
 						<p>+555 555 555</p>
 					</div>

@@ -14,7 +14,8 @@
 				</p>
 			</div>
 			<div class="m-auto mt-[5vmin] flex w-full justify-center">
-				<button class="text-color-white rounded-3xl border-2 pl-6 pr-6 pt-2 pb-2 text-center"
+				<button
+					class="text-color-white hover:bg-color-cream hover:text-color-background hover:border-color-cream rounded-3xl border-2 pl-6 pr-6 pt-2 pb-2 text-center duration-150"
 					>Get Started</button
 				>
 			</div>
