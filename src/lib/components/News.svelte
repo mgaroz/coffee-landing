@@ -21,12 +21,12 @@
 			</div>
 		</div>
 		<div
-			class="text-color-cream flex h-[52vmin] w-32 items-center justify-center rounded-3xl bg-[#252525]"
+			class="text-color-cream shine relative flex h-[52vmin] w-32 items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
 		>
 			<p class="v-text rotate-180 transform text-5xl font-bold uppercase">Coffee Shop</p>
 		</div>
 		<div
-			class="text-color-cream flex h-[52vmin] w-32 items-center justify-center rounded-3xl bg-[#252525]"
+			class="text-color-cream shine relative flex h-[52vmin] w-32 items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
 		>
 			<p class="v-text rotate-180 transform text-5xl font-bold uppercase">Restaurant</p>
 		</div>
@@ -36,5 +36,22 @@
 <style>
 	.v-text {
 		writing-mode: vertical-lr;
+	}
+
+	.shine:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -300px;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.3);
+		transform: skewX(-30deg);
+		transition: 0.75s;
+	}
+
+	.shine:hover:before {
+		left: 275px;
+		background: rgba(255, 255, 255, 0.15);
 	}
 </style>

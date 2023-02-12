@@ -1,5 +1,14 @@
-<nav class="fixed left-0 right-0 z-10 m-auto mr-auto ml-auto w-[95%] bg-[#ffffff00]">
-	<div class="flex w-full items-center justify-between bg-[#ffffff00] pt-2 pb-2">
+<script>
+	let y = 0;
+</script>
+
+<svelte:window bind:scrollY={y} />
+
+<nav
+	class="fixed left-0 right-0 z-10 m-auto mr-auto ml-auto w-full bg-[#ffffff00]"
+	class:frosty={y >= 100}
+>
+	<div class="mr-auto ml-auto flex w-[95%] items-center justify-between bg-[#ffffff00] pt-2 pb-2">
 		<div class="font-merriweather text-color-white">
 			<img src="img/logo.png" alt="logo" class="max-h-12" />
 		</div>
@@ -18,3 +27,10 @@
 		</div>
 	</div>
 </nav>
+
+<style>
+	.frosty {
+		background-color: rgba(27, 27, 27, 0.5);
+		backdrop-filter: blur(10px);
+	}
+</style>
