@@ -25,7 +25,7 @@
 				>Login</button
 			>
 			<button
-				class="text-color-white bg-color-green hover:bg-color-background rounded-3xl border-[1px] pl-4 pr-4 pt-2 pb-2 duration-150"
+				class="text-color-white bg-color-green rounded-3xl border-[1px] pl-4 pr-4 pt-2 pb-2 duration-150"
 				>Sign Up</button
 			>
 		</div>
