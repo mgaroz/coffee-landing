@@ -15,7 +15,7 @@
 					a voluptates doloremque maiores quae.
 				</p>
 				<button
-					class="text-color-cream max-h-[80px] rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 text-right font-sans"
+					class="text-color-cream hover:bg-color-white hover:text-color-green max-h-[80px] rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 text-right font-sans duration-150"
 					>Read More</button
 				>
 			</div>
@@ -47,7 +47,7 @@
 		height: 100%;
 		background: rgba(255, 255, 255, 0.3);
 		transform: skewX(-30deg);
-		transition: 0.75s;
+		transition: 0.35s;
 	}
 
 	.shine:hover:before {
