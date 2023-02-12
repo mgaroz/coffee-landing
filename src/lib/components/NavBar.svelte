@@ -1,5 +1,6 @@
 <script>
 	let y = 0;
+	let active = 'home';
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -13,11 +14,29 @@
 			<img src="img/logo.png" alt="logo" class="max-h-12" />
 		</div>
 		<div class="text-color-white flex gap-8">
-			<a href="/">Home</a>
-			<a href="#about">About</a>
-			<a href="#themenu">Menu</a>
-			<a href="#news">News</a>
-			<a href="#contact">Contact</a>
+			<a href="/" on:click={() => (active = 'home')} class={active === 'home' ? 'active' : 'attiv'}
+				>Home</a
+			>
+			<a
+				href="#about"
+				on:click={() => (active = 'about')}
+				class={active === 'about' ? 'active' : 'attiv'}>About</a
+			>
+			<a
+				href="#themenu"
+				on:click={() => (active = 'themenu')}
+				class={active === 'themenu' ? 'active' : 'attiv'}>Menu</a
+			>
+			<a
+				href="#news"
+				on:click={() => (active = 'news')}
+				class={active === 'news' ? 'active' : 'attiv'}>News</a
+			>
+			<a
+				href="#contact"
+				on:click={() => (active = 'contact')}
+				class={active === 'contact' ? 'active' : 'attiv'}>Contact</a
+			>
 		</div>
 		<div class="flex gap-2">
 			<button
@@ -36,5 +55,59 @@
 	.frosty {
 		background-color: rgba(27, 27, 27, 0.5);
 		backdrop-filter: blur(10px);
+	}
+
+	.active {
+		color: white;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.active:before {
+		position: absolute;
+		content: '';
+		width: 35%;
+		height: 1px;
+		border-bottom: 2px solid white;
+		bottom: 0;
+	}
+
+	.attiv {
+		color: white;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.attiv:before {
+		position: absolute;
+		content: '';
+		width: 0%;
+		height: 1px;
+		border-bottom: 2px solid white;
+		bottom: 0;
+		transition: width 0.3s;
+	}
+
+	.attiv:after {
+		opacity: 1;
+		transform: scale(0);
+		transform-origin: left;
+		background-color: white;
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		height: 0.1em;
+		transition: opacity 300ms, transform 300ms;
+	}
+
+	.attiv:hover:before {
+		width: 35%;
+	}
+
+	.attiv:hover::after,
+	.attiv:focus::after {
+		transform: scale(1);
 	}
 </style>
