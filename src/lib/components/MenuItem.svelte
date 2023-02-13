@@ -1,7 +1,7 @@
 <script>
 	import { slide } from 'svelte/transition';
 	export let entry;
-	let [name, price] = entry;
+	let [coffee, details] = [entry[0], entry[1]];
 	let isOpen = false;
 	const toggle = () => (isOpen = !isOpen);
 </script>
@@ -12,12 +12,13 @@
 	on:keypress={toggle}
 	aria-expanded={isOpen}
 >
-	<p>{name}</p>
-	<p>€{price}</p>
+	<p>{coffee}</p>
+	<p>€{details.price}</p>
 </div>
 {#if isOpen}
 	<div transition:slide={{ duration: 200 }}>
-		<p>i'm open!</p>
+		<p>{details.description}</p>
+		<img src={details.img} alt={coffee} />
 	</div>
 {/if}
 <br />

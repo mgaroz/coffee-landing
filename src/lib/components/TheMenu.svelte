@@ -2,12 +2,38 @@
 	import MenuItem from './MenuItem.svelte';
 
 	const data = {
-		Espresso: 6,
-		Capuccino: 5,
-		Americano: 3,
-		'Latte Art': 8,
-		Doppio: 5,
-		Cortado: 7
+		Espresso: {
+			price: 6,
+			description: 'A concentrated form of coffee served in small, strong shots',
+			img: 'img/coffee/espresso.jpg'
+		},
+		Capuccino: {
+			price: 5,
+			description: 'A coffee drink made from a mixture of espresso and steamed milk',
+			img: 'img/coffee/capuccino.jpg'
+		},
+		Americano: {
+			price: 3,
+			description: 'An Americano is espresso topped with hot water',
+			img: 'img/coffee/americano.jpg'
+		},
+		'Latte Art': {
+			price: 8,
+			description:
+				'Latte art is the design you see on top of (typically) drinks like lattes, cappuccinos, and similar milk-and-espresso beverages',
+			img: 'img/coffee/latte-art.jpg'
+		},
+		Doppio: {
+			price: 5,
+			description:
+				'The name doppio means ”double” in Italian and refers to a double shot or two espresso shots',
+			img: 'img/coffee/doppio.jpg'
+		},
+		Cortado: {
+			price: 7,
+			description: 'A cortado is a hot espresso beverage, coupled with warm, steamed milk',
+			img: 'img/coffee/cortado.jpg'
+		}
 	};
 </script>
 
