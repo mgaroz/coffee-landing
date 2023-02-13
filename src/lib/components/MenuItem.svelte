@@ -16,9 +16,14 @@
 	<p>€{details.price}</p>
 </div>
 {#if isOpen}
-	<div transition:slide={{ duration: 200 }}>
-		<p>{details.description}</p>
-		<img src={details.img} alt={coffee} />
+	<div
+		transition:slide={{ duration: 200 }}
+		class="mt-2 flex w-full items-center justify-between gap-4 p-4"
+	>
+		<p class="font-playfair text-color-gray-text w-1/2 text-xl font-bold">{details.description}</p>
+		<div class="h-[25vmin] w-2/3 overflow-hidden rounded-xl shadow-md">
+			<img src={details.img} alt={coffee} class="block h-full w-full object-cover object-center" />
+		</div>
 	</div>
 {/if}
 <br />

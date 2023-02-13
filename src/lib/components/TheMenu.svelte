@@ -51,7 +51,7 @@
 			<div class="justify-left flex">
 				<button
 					class="text-color-background hover:bg-color-green hover:text-color-white mt-10 rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 font-sans duration-150"
-					>Show All Menu</button
+					>View Full Menu</button
 				>
 			</div>
 			<div class="h-full w-full bg-[url('img/ill-1.svg')] bg-no-repeat" />
