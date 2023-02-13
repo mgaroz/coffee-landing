@@ -10,7 +10,7 @@
 	<div class="text-color-white font-merriweather m-auto w-[95%] pt-10">
 		<div class="grid grid-cols-4 gap-8">
 			<div class="w-full self-start">
-				<a href="/" on:click={() => activeItem.set('home')}>
+				<a href="/" on:click={() => setActiveItem('home')}>
 					<img
 						src="img/logo.png"
 						alt="logo_footer"
