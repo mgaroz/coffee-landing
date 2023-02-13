@@ -12,7 +12,7 @@
 	on:keypress={toggle}
 	aria-expanded={isOpen}
 >
-	<p>{coffee}</p>
+	<p class="duration-150 hover:indent-2">{coffee}</p>
 	<p>€{details.price}</p>
 </div>
 {#if isOpen}
