@@ -1,4 +1,4 @@
-<div class="m-auto h-[85vmin] bg-[url('img/background.webp')] bg-cover bg-no-repeat">
+<div class="m-auto h-[85vmin] bg-[url('img/background-1440.webp')] bg-cover bg-no-repeat">
 	<div class="relative m-auto h-full bg-gradient-to-t from-[#1b1b1b_5%] via-[#FFFFFF00_65%]">
 		<div class="m-auto h-full w-2/3">
 			<div class="flex justify-center">

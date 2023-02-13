@@ -22,7 +22,12 @@
 	>
 		<p class="font-playfair text-color-gray-text w-1/2 text-xl font-bold">{details.description}</p>
 		<div class="h-[25vmin] w-2/3 overflow-hidden rounded-xl shadow-md">
-			<img src={details.img} alt={coffee} class="block h-full w-full object-cover object-center" />
+			<img
+				src={`${details.img}.webp`}
+				alt={coffee}
+				class="block h-full w-full object-cover object-center"
+				srcset={`${details.img}-480.webp 480w, ${details.img}-720.webp 720w, ${details.img}-1440.webp 1440w`}
+			/>
 		</div>
 	</div>
 {/if}
