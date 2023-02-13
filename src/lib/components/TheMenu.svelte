@@ -40,7 +40,7 @@
 <section id="themenu" class="bg-color-cream m-auto mt-20 w-full">
 	<div class="text-color-background m-auto grid w-[95%] grid-cols-2 grid-rows-2 gap-8 pt-10">
 		<div>
-			<h2 class="font-playfair text-center text-7xl font-bold">
+			<h2 class="font-playfair text-center text-7xl font-bold uppercase">
 				<span class="text-color-gray-text">The</span> Menu
 			</h2>
 			<p class="font-merriweather text-color-gray-text pt-10">
