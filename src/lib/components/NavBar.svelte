@@ -6,7 +6,7 @@
 <svelte:window bind:scrollY={y} />
 
 <nav
-	class="fixed left-0 right-0 z-10 m-auto mr-auto ml-auto w-full bg-[#ffffff00]"
+	class="fixed left-0 right-0 z-10 m-auto mr-auto ml-auto w-full bg-[#ffffff00] duration-200"
 	class:frosty={y >= 100}
 >
 	<div class="mr-auto ml-auto flex w-[95%] items-center justify-between bg-[#ffffff00] pt-2 pb-2">
