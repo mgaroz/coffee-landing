@@ -1,8 +1,16 @@
+<script>
+	import { activeItem } from '$lib/stores.js';
+
+	function setActiveItem(item) {
+		activeItem.set(item);
+	}
+</script>
+
 <div class="bg-color-green w-full pb-10">
 	<div class="text-color-white font-merriweather m-auto w-[95%] pt-10">
 		<div class="grid grid-cols-4 gap-8">
 			<div class="w-full self-start">
-				<a href="/">
+				<a href="/" on:click={() => activeItem.set('home')}>
 					<img
 						src="img/logo.png"
 						alt="logo_footer"
@@ -20,10 +28,34 @@
 			<div class="ml-10 mr-10 self-center text-center">
 				<ul class="font-playfair columns-2 leading-loose">
 					<li><a href="/" class="duration-150 hover:underline">Home</a></li>
-					<li><a href="#about" class="duration-150 hover:underline">About</a></li>
-					<li><a href="#menu" class="duration-150 hover:underline">Menu</a></li>
-					<li><a href="#news" class="duration-150 hover:underline">News</a></li>
-					<li><a href="#contact" class="duration-150 hover:underline">Contact</a></li>
+					<li>
+						<a
+							href="#about"
+							class="duration-150 hover:underline"
+							on:click={() => setActiveItem('about')}>About</a
+						>
+					</li>
+					<li>
+						<a
+							href="#themenu"
+							class="duration-150 hover:underline"
+							on:click={() => setActiveItem('themenu')}>Menu</a
+						>
+					</li>
+					<li>
+						<a
+							href="#news"
+							class="duration-150 hover:underline"
+							on:click={() => setActiveItem('news')}>News</a
+						>
+					</li>
+					<li>
+						<a
+							href="#contact"
+							class="duration-150 hover:underline"
+							on:click={() => setActiveItem('contact')}>Contact</a
+						>
+					</li>
 				</ul>
 			</div>
 			<div class="font-playfair w-[30vmin] self-center">

@@ -1,6 +1,7 @@
 <script>
+	import { activeItem } from '$lib/stores.js';
+
 	let y = 0;
-	let active = 'home';
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -11,33 +12,35 @@
 >
 	<div class="mr-auto ml-auto flex w-[95%] items-center justify-between bg-[#ffffff00] pt-2 pb-2">
 		<div class="font-merriweather text-color-white">
-			<a href="/">
+			<a href="/" on:click={() => activeItem.set('home')}>
 				<img src="img/logo.png" alt="logo" class="max-h-12" />
 			</a>
 		</div>
 		<div class="text-color-white flex gap-8">
-			<a href="/" on:click={() => (active = 'home')} class={active === 'home' ? 'active' : 'attiv'}
-				>Home</a
+			<a
+				href="/"
+				on:click={() => activeItem.set('home')}
+				class={$activeItem === 'home' ? 'active' : 'attiv'}>Home</a
 			>
 			<a
 				href="#about"
-				on:click={() => (active = 'about')}
-				class={active === 'about' ? 'active' : 'attiv'}>About</a
+				on:click={() => activeItem.set('about')}
+				class={$activeItem === 'about' ? 'active' : 'attiv'}>About</a
 			>
 			<a
 				href="#themenu"
-				on:click={() => (active = 'themenu')}
-				class={active === 'themenu' ? 'active' : 'attiv'}>Menu</a
+				on:click={() => activeItem.set('themenu')}
+				class={$activeItem === 'themenu' ? 'active' : 'attiv'}>Menu</a
 			>
 			<a
 				href="#news"
-				on:click={() => (active = 'news')}
-				class={active === 'news' ? 'active' : 'attiv'}>News</a
+				on:click={() => activeItem.set('news')}
+				class={$activeItem === 'news' ? 'active' : 'attiv'}>News</a
 			>
 			<a
 				href="#contact"
-				on:click={() => (active = 'contact')}
-				class={active === 'contact' ? 'active' : 'attiv'}>Contact</a
+				on:click={() => activeItem.set('contact')}
+				class={$activeItem === 'contact' ? 'active' : 'attiv'}>Contact</a
 			>
 		</div>
 		<div class="flex gap-2">
