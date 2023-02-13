@@ -31,7 +31,7 @@
 				<div class="flex justify-start gap-4 text-base">
 					<input
 						type="email"
-						class="bg-color-cream border-b-[1px] focus:border-b-2 focus:outline-none active:border-0"
+						class="bg-color-cream hover:border-b-color-background border-b-color-background border-b-[1px] focus:border-b-2 focus:outline-none active:border-0"
 						placeholder="Enter your email"
 					/>
 					<button
