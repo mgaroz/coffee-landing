@@ -3,7 +3,7 @@
 	class="text-color-background m-auto w-full bg-gradient-to-t from-[#1B1B1B_50%] to-[#EEE0D3_50%] pt-20"
 >
 	<div class="m-auto flex w-[95%] justify-center gap-6 pb-10">
-		<div class="bg-color-green text-color-cream h-[52vmin] w-3/5 rounded-3xl">
+		<div class="bg-color-green text-color-white h-[52vmin] w-3/5 rounded-3xl">
 			<div class="ml-10 mr-10 mt-5 flex items-center justify-around">
 				<h2 class="font-playfair text-5xl font-bold">Big News</h2>
 				<img src="img/news-coffee.svg" alt="coffee" />
@@ -15,18 +15,18 @@
 					a voluptates doloremque maiores quae.
 				</p>
 				<button
-					class="text-color-cream hover:bg-color-white hover:text-color-green max-h-[80px] rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 text-right font-sans duration-150"
+					class="text-color-white hover:bg-color-white hover:text-color-green max-h-[80px] rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 text-right font-sans duration-150"
 					>Read More</button
 				>
 			</div>
 		</div>
 		<div
-			class="text-color-cream shine relative flex h-[52vmin] w-32 cursor-pointer items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
+			class="text-color-white shine relative flex h-[52vmin] w-32 cursor-pointer items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
 		>
 			<p class="v-text rotate-180 transform text-5xl font-bold uppercase">Coffee Shop</p>
 		</div>
 		<div
-			class="text-color-cream shine relative flex h-[52vmin] w-32 cursor-pointer items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
+			class="text-color-white shine relative flex h-[52vmin] w-32 cursor-pointer items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
 		>
 			<p class="v-text rotate-180 transform text-5xl font-bold uppercase">Restaurant</p>
 		</div>

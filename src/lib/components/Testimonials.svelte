@@ -1,4 +1,4 @@
-<section id="what-people-say" class="bg-color-background text-color-white w-full pt-20">
+<section id="what-people-say" class="bg-color-background text-color-white m-auto w-full pt-20">
 	<div class="min-h-96 m-auto w-[95%]">
 		<h2 class="font-merriweather text-center text-7xl uppercase">
 			From <span class="text-color-gray-text">our customers</span>

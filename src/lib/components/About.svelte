@@ -1,4 +1,4 @@
-<section id="about" class="bg-color-background">
+<section id="about" class="bg-color-background m-auto w-[95%]">
 	<div class="text-color-gray-text font-merriweather m-auto mt-4 flex w-[95%] justify-between">
 		<h2>About Us</h2>
 		<h2>02</h2>
