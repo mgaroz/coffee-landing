@@ -21,12 +21,12 @@
 			</div>
 		</div>
 		<div
-			class="text-color-cream shine relative flex h-[52vmin] w-32 items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
+			class="text-color-cream shine relative flex h-[52vmin] w-32 cursor-pointer items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
 		>
 			<p class="v-text rotate-180 transform text-5xl font-bold uppercase">Coffee Shop</p>
 		</div>
 		<div
-			class="text-color-cream shine relative flex h-[52vmin] w-32 items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
+			class="text-color-cream shine relative flex h-[52vmin] w-32 cursor-pointer items-center justify-center overflow-hidden rounded-3xl bg-[#252525]"
 		>
 			<p class="v-text rotate-180 transform text-5xl font-bold uppercase">Restaurant</p>
 		</div>
