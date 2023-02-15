@@ -7,5 +7,6 @@ import News from './components/News.svelte'
 import Testimonials from './components/Testimonials.svelte'
 import Contact from './components/Contact.svelte'
 import Footer from './components/Footer.svelte'
+import Input from './components/elements/Input.svelte'
 
-export { NavBar, Hero, About, Gallery, TheMenu, News, Testimonials, Contact, Footer }
+export { NavBar, Hero, About, Gallery, TheMenu, News, Testimonials, Contact, Footer, Input }

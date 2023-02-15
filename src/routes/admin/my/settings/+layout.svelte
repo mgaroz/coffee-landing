@@ -27,20 +27,22 @@
 	</div>
 	<div class="bg-color-white flex w-full">
 		<div class="my-4 flex w-1/5 space-x-4 border-r-2">
-			<ul class="bg-base-100 m-4 w-56 space-y-4 rounded-2xl">
+			<ul class="bg-base-100 m-4 w-56 space-y-4 rounded-2xl text-slate-600 hover:cursor-pointer">
 				{#each navigation as navItem}
 					<li
-						class="rounded-2xl p-4 {active === navItem.title ? 'bg-[#40518980] text-white' : ''}"
+						class="rounded-2xl p-4 {active === navItem.title
+							? 'font-bold text-slate-800'
+							: 'font-medium'} hover:font-bold"
 						on:click={() => (active = navItem.title)}
 						on:keypress={() => (active = navItem.title)}
 					>
 						{@html navItem.icon}
-						<a href={navItem.href} class="pl-4 font-medium">{navItem.title}</a>
+						<a href={navItem.href} class="pl-4">{navItem.title}</a>
 					</li>
 				{/each}
 			</ul>
 		</div>
-		<div class="mx-6 my-8">
+		<div class="mx-6 my-8 flex-1">
 			<slot />
 		</div>
 	</div>

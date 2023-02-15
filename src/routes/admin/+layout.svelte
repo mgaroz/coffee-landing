@@ -1,6 +1,8 @@
 <script>
+	import { getImageURL } from '$lib/utils';
 	import { scale } from 'svelte/transition';
 	let menuOpen = false;
+	export let data;
 
 	function handleMenuOpen() {
 		menuOpen = true;
@@ -13,7 +15,7 @@
 	}
 </script>
 
-<div class=" wrapper h-full w-full">
+<div class="wrapper h-full w-full">
 	<header class="col-[2_/_span_1] row-[1_/_span_1]">
 		<nav class="flex h-16 w-full items-center  justify-between bg-[#FFFFFE]">
 			<div class="flex w-full items-center justify-between">
@@ -29,8 +31,14 @@
 								aria-haspopup="true"
 								on:click|stopPropagation={handleMenuOpen}
 							>
-								<img src="/img/myavatar.png" alt="me" class="h-8 w-8 rounded-full" />
-								<p class="text-color-background text-sm">John</p>
+								<img
+									src={data.user?.avatar
+										? getImageURL(data.user?.collectionId, data.user?.id, data.user?.avatar)
+										: `https://ui-avatars.com/api/?name=${data.user?.name}`}
+									alt="me"
+									class="h-8 w-8 rounded-full"
+								/>
+								<p class="text-color-background text-sm">{data.user?.name}</p>
 								<i class="fa-solid fa-chevron-down text-[8px]" />
 							</button>
 						</div>
@@ -83,8 +91,14 @@
 			<img src="/img/andys_logo_300.webp" alt="logo" class="mx-auto h-auto w-1/2 align-middle" />
 		</div>
 		<div class="flex flex-col items-center justify-center gap-2">
-			<img src="/img/myavatar.png" alt="me2" class="mx-auto h-auto w-14" />
-			<p class="text-[#fffffe]">John Perez</p>
+			<img
+				src={data.user?.avatar
+					? getImageURL(data.user?.collectionId, data.user?.id, data.user?.avatar)
+					: `https://ui-avatars.com/api/?name=${data.user?.name}`}
+				alt="me2"
+				class="mx-auto h-auto w-14 rounded-full"
+			/>
+			<p class="text-[#fffffe]">{data.user?.name}</p>
 			<p class="text-xs font-medium text-[#ABB9E8]">Administrator</p>
 			<div class="flex gap-3 pt-2 text-xs">
 				<i class="fa-solid fa-gear" />
