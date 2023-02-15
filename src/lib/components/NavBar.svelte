@@ -44,9 +44,10 @@
 			>
 		</div>
 		<div class="flex gap-2">
-			<button
+			<a
+				href="/login"
 				class="text-color-white hover:bg-color-white hover:text-color-background hover:border-color-white rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 duration-150"
-				>Login</button
+				>Login</a
 			>
 			<button
 				class="text-color-white bg-color-green rounded-3xl border-[1px] pl-4 pr-4 pt-2 pb-2 duration-150"
