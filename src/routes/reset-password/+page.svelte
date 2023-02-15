@@ -12,12 +12,12 @@
 		<div class="flex h-1/2 flex-col items-center justify-around gap-4">
 			<img src="img/logo.png" alt="logo" class="w-1/2" />
 			<div class="text-center">
-				<h1 class="text-3xl">Welcome back</h1>
-				<p>Please log in to continue</p>
+				<h1 class="text-3xl">Reset password</h1>
+				<p>Please enter your email</p>
 			</div>
 		</div>
 		<form
-			action="?/login"
+			action="?/resetPassword"
 			method="POST"
 			class="flex h-1/2 w-full flex-col items-center justify-start gap-4"
 		>
@@ -36,39 +36,19 @@
 					>Email</label
 				>
 			</div>
-			<div class="relative z-10 w-[52%]">
-				<input
-					type="password"
-					class="text-color-white peer block w-full appearance-none border-b-[1px] bg-[transparent] p-2 focus:outline-none"
-					placeholder=" "
-					required
-					id="password"
-					name="password"
-				/>
-				<label
-					for="password"
-					class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-white peer-focus:dark:text-white"
-					>Password</label
-				>
-			</div>
-			<div class="relative z-0 w-[52%] text-right">
-				<a href="/reset-password" class="block appearance-none text-xs text-white hover:underline"
-					>Forgot password?</a
-				>
-			</div>
 			<button
 				type="submit"
 				class="hover:bg-color-white hover:text-color-background w-[20vmin] rounded-3xl border-[1px] pt-2 pb-2 pr-6 pl-6 duration-150"
-				>Sign in</button
+				>Reset password</button
 			>
-			{#if form?.notVerified}
+			{#if form?.success}
 				<div
-					class="mb-4 rounded-lg bg-red-50 p-4 text-sm text-red-800 shadow-lg dark:bg-red-50 dark:text-red-400"
+					class="mb-4 rounded-lg bg-green-50 p-4 text-sm text-green-800 shadow-lg dark:bg-gray-800 dark:text-green-400"
 					role="alert"
 				>
-					<i class="fa-regular fa-circle-xmark align-middle text-xl" />
-					<span class="align-middle font-bold">Not verified!</span>
-					<span class="align-middle">You must verify your email before you can login</span>
+					<i class="fa-regular fa-circle-check align-middle text-xl" />
+					<span class="align-middle font-bold">Success!</span>
+					<span class="align-middle">An email has been sent to reset your password.</span>
 				</div>
 			{/if}
 		</form>
