@@ -2,10 +2,17 @@
 	export let value;
 	export let type = 'submit';
 	export let loading = false;
+	export let background = undefined;
+	export let hover = undefined;
+	export let border = undefined;
 </script>
 
 <button
-	class="text-color-white inline-flex w-1/3 max-w-lg items-center justify-center rounded-full bg-[#405189] py-2 shadow-lg duration-150 hover:bg-[#405189CC]"
+	class="text-color-white inline-flex w-1/3 max-w-lg items-center justify-center rounded-full 
+    {background !== undefined ? `${background}` : 'bg-[#405189]'}  
+    py-2 shadow-lg duration-150 
+    {hover !== undefined ? `${hover}` : 'hover:bg-[#405189CC]'}
+    {border !== undefined ? `${border}` : ''}"
 	{type}
 	disabled={loading}
 >
