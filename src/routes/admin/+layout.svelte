@@ -101,8 +101,12 @@
 			<p class="text-[#fffffe]">{data.user?.name}</p>
 			<p class="text-xs font-medium text-[#ABB9E8]">Administrator</p>
 			<div class="flex gap-3 pt-2 text-xs">
-				<i class="fa-solid fa-gear" />
-				<i class="fa-solid fa-power-off" />
+				<a href="/admin/my/settings">
+					<i class="fa-solid fa-gear" />
+				</a>
+				<a href="/" action="/logout" method="POST">
+					<i class="fa-solid fa-power-off" />
+				</a>
 			</div>
 		</div>
 		<div class="group flex h-12 items-center gap-4">

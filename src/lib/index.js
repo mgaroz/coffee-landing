@@ -8,5 +8,6 @@ import Testimonials from './components/Testimonials.svelte'
 import Contact from './components/Contact.svelte'
 import Footer from './components/Footer.svelte'
 import Input from './components/elements/Input.svelte'
+import Modal from './components/elements/Modal.svelte'
 
-export { NavBar, Hero, About, Gallery, TheMenu, News, Testimonials, Contact, Footer, Input }
+export { NavBar, Hero, About, Gallery, TheMenu, News, Testimonials, Contact, Footer, Input, Modal }
