@@ -1,5 +1,27 @@
 <script>
+	import { enhance, applyAction } from '$app/forms';
+	import { invalidateAll } from '$app/navigation';
 	export let form;
+
+	let loading;
+
+	$: loading = false;
+
+	const submitLogin = () => {
+		loading = true;
+		return async ({ result }) => {
+			switch (result.type) {
+				case 'succes':
+					await invalidateAll();
+					break;
+				case 'error':
+					break;
+				default:
+					await applyAction(result);
+			}
+			loading = false;
+		};
+	};
 </script>
 
 <div class="bg-color-background flex h-screen w-full items-center justify-center">
@@ -20,6 +42,7 @@
 			action="?/login"
 			method="POST"
 			class="flex h-1/2 w-full flex-col items-center justify-start gap-4"
+			use:enhance={submitLogin}
 		>
 			<div class="relative z-10 w-[52%]">
 				<input
@@ -58,9 +81,34 @@
 			</div>
 			<button
 				type="submit"
-				class="hover:bg-color-white hover:text-color-background w-[20vmin] rounded-3xl border-[1px] pt-2 pb-2 pr-6 pl-6 duration-150"
-				>Sign in</button
+				class="hover:bg-color-white hover:text-color-background inline-flex w-[20vmin] items-center justify-center rounded-3xl border-[1px] pt-2 pb-2 pr-6 pl-6 duration-150"
 			>
+				{#if loading}
+					<svg
+						class="-ml-1 mr-3 h-5 w-5 animate-spin text-white"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+					>
+						<circle
+							class="opacity-25"
+							cx="12"
+							cy="12"
+							r="10"
+							stroke="currentColor"
+							stroke-width="4"
+						/>
+						<path
+							class="opacity-75"
+							fill="currentColor"
+							d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+						/>
+					</svg>
+					Processing...
+				{:else}
+					Sign in
+				{/if}
+			</button>
 			{#if form?.notVerified}
 				<div
 					class="mb-4 rounded-lg bg-red-50 p-4 text-sm text-red-800 shadow-lg dark:bg-red-50 dark:text-red-400"
