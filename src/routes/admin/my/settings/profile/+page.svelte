@@ -62,7 +62,7 @@
 							id="avatar-preview"
 						/>
 						<span
-							class="bg-color-white absolute bottom-1 right-2 h-8 w-8 rounded-full border border-white text-center align-middle dark:border-gray-800"
+							class="bg-color-white absolute bottom-1 right-2 h-8 w-8 rounded-full border-2 border-[#405189] text-center align-middle"
 							><i class="fa-solid fa-pencil text-lg text-[#405189] " /></span
 						>
 					</div>
