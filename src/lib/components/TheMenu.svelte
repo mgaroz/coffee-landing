@@ -50,7 +50,7 @@
 			</p>
 			<div class="justify-left flex">
 				<button
-					class="text-color-background hover:bg-color-green hover:text-color-white mt-10 rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 font-sans duration-150"
+					class="text-color-background hover:bg-color-green hover:text-color-white border-color-background mt-10 rounded-3xl border-[1px] pl-6 pr-6 pt-2 pb-2 font-sans duration-150"
 					>View Full Menu</button
 				>
 			</div>

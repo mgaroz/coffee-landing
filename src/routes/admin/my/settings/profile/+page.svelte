@@ -76,7 +76,7 @@
 		<Input id="name" label="Name" value={data?.user?.name} disabled={loading} />
 		<div class="w-full max-w-lg pt-3 text-right">
 			<button
-				class="text-color-white w-1/3 max-w-lg rounded-full bg-[#405189] py-2 shadow-lg hover:bg-[#405189CC]"
+				class="text-color-white w-1/3 max-w-lg rounded-full bg-[#405189] py-2 shadow-lg duration-150 hover:bg-[#405189CC]"
 				type="submit"
 				disabled={loading}
 			>

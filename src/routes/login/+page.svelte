@@ -24,7 +24,7 @@
 			<div class="relative z-10 w-[52%]">
 				<input
 					type="email"
-					class="text-color-white peer block w-full appearance-none border-b-[1px] bg-[transparent] p-2 focus:outline-none"
+					class="text-color-white border-color-white focus:border-color-white peer block w-full appearance-none border-0 border-b-[1px] bg-[transparent] p-2 focus:outline-none focus:ring-0"
 					placeholder=" "
 					required
 					id="email"
@@ -39,7 +39,7 @@
 			<div class="relative z-10 w-[52%]">
 				<input
 					type="password"
-					class="text-color-white peer block w-full appearance-none border-b-[1px] bg-[transparent] p-2 focus:outline-none"
+					class="text-color-white border-color-white focus:border-color-white peer block w-full appearance-none border-0 border-b-[1px] bg-[transparent] p-2 focus:outline-none focus:ring-0"
 					placeholder=" "
 					required
 					id="password"
