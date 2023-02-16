@@ -104,9 +104,11 @@
 				<a href="/admin/my/settings">
 					<i class="fa-solid fa-gear" />
 				</a>
-				<a href="/" action="/logout" method="POST">
-					<i class="fa-solid fa-power-off" />
-				</a>
+				<form action="/logout" method="POST">
+					<button type="submit">
+						<i class="fa-solid fa-power-off" />
+					</button>
+				</form>
 			</div>
 		</div>
 		<div class="group flex h-12 items-center gap-4">
@@ -126,8 +128,14 @@
 		</div>
 		<div class="group flex h-12 items-center gap-4">
 			<div class="h-12" />
-			<i class="fa-solid fa-right-from-bracket text-xs text-[#ABB9E8] group-hover:text-[#fffffe]" />
-			<a href="/" class="text-[#ABB9E8] group-hover:text-[#fffffe]">Logout</a>
+			<form action="/logout" method="POST">
+				<button class="text-[#ABB9E8] group-hover:text-[#fffffe]">
+					<i
+						class="fa-solid fa-right-from-bracket mr-3 text-xs text-[#ABB9E8] group-hover:text-[#fffffe]"
+					/>
+					Logout
+				</button>
+			</form>
 		</div>
 	</aside>
 	<slot class="col-[2_/_span_1] row-[2_/_span_1]" />
