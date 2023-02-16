@@ -9,7 +9,7 @@
 			<div class="ml-10 mr-10 mt-5 flex items-end justify-around">
 				<h2 class="font-playfair text-5xl font-bold">Big News</h2>
 				<div class="flex w-1/4 justify-center">
-					<img src="img/news-coffee.svg" alt="coffee" class="h-full w-full" />
+					<img src="/img/news-coffee.svg" alt="coffee" class="h-full w-full" />
 				</div>
 			</div>
 			<div class="ml-10 mr-10 mt-8 flex items-center justify-between pb-10">

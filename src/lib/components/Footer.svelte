@@ -12,7 +12,7 @@
 			<div class="w-full self-start">
 				<a href="/" on:click={() => setActiveItem('home')}>
 					<img
-						src="img/logo.png"
+						src="/img/logo.png"
 						alt="logo_footer"
 						class="m-auto h-auto w-[15vmin] cursor-pointer"
 					/></a

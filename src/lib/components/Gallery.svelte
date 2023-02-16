@@ -4,7 +4,7 @@
 			<div class="overflow-hidden rounded-xl">
 				<img
 					class="h-[26vmin] object-cover duration-150 group-hover:scale-110"
-					src="img/pic-1-480.webp"
+					src="/img/pic-1-480.webp"
 					alt="Brew"
 				/>
 			</div>
@@ -17,7 +17,7 @@
 			<div class="overflow-hidden rounded-xl">
 				<img
 					class="h-[26vmin] object-cover duration-150 group-hover:scale-110"
-					src="img/pic-2-480.webp"
+					src="/img/pic-2-480.webp"
 					alt="Barista"
 				/>
 			</div>
@@ -30,7 +30,7 @@
 			<div class="overflow-hidden rounded-xl">
 				<img
 					class="h-[26vmin] object-cover duration-150 group-hover:scale-110"
-					src="img/pic-3-480.webp"
+					src="/img/pic-3-480.webp"
 					alt="Beans"
 				/>
 			</div>
@@ -43,7 +43,7 @@
 			<div class="overflow-hidden rounded-xl">
 				<img
 					class="h-[26vmin] object-cover duration-150 group-hover:scale-110"
-					src="img/pic-4-480.webp"
+					src="/img/pic-4-480.webp"
 					alt="Beans2"
 				/>
 			</div>

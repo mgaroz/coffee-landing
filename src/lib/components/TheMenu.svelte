@@ -5,34 +5,34 @@
 		Espresso: {
 			price: 6,
 			description: 'A concentrated form of coffee served in small, strong shots',
-			img: 'img/coffee/espresso'
+			img: '/img/coffee/espresso'
 		},
 		Capuccino: {
 			price: 5,
 			description: 'A coffee drink made from a mixture of espresso and steamed milk',
-			img: 'img/coffee/capuccino'
+			img: '/img/coffee/capuccino'
 		},
 		Americano: {
 			price: 3,
 			description: 'An Americano is espresso topped with hot water',
-			img: 'img/coffee/americano'
+			img: '/img/coffee/americano'
 		},
 		'Latte Art': {
 			price: 8,
 			description:
 				'Latte art is the design you see on top of (typically) drinks like lattes, cappuccinos, and similar milk-and-espresso beverages',
-			img: 'img/coffee/latte-art'
+			img: '/img/coffee/latte-art'
 		},
 		Doppio: {
 			price: 5,
 			description:
 				'The name doppio means ”double” in Italian and refers to a double shot or two espresso shots',
-			img: 'img/coffee/doppio'
+			img: '/img/coffee/doppio'
 		},
 		Cortado: {
 			price: 7,
 			description: 'A cortado is a hot espresso beverage, coupled with warm, steamed milk',
-			img: 'img/coffee/cortado'
+			img: '/img/coffee/cortado'
 		}
 	};
 </script>
@@ -54,7 +54,7 @@
 					>View Full Menu</button
 				>
 			</div>
-			<div class="h-full w-full bg-[url('img/ill-1.svg')] bg-no-repeat" />
+			<div class="h-full w-full bg-[url('/img/ill-1.svg')] bg-no-repeat" />
 		</div>
 		<div class=" col-span-1 row-span-2 mt-20 ">
 			<div

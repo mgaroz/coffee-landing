@@ -6,7 +6,7 @@
 	</div>
 	<div class="m-auto mt-10 flex w-[95%] gap-16 pb-20">
 		<div class="flex w-1/2 justify-center">
-			<img src="img/contact.svg" alt="contact us" />
+			<img src="/img/contact.svg" alt="contact us" />
 		</div>
 		<div class="font-merriweather flex w-1/3 flex-col items-center justify-evenly">
 			<div class="flex w-full flex-col gap-8 text-2xl">
