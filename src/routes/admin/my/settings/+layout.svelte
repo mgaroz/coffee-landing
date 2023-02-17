@@ -3,12 +3,12 @@
 		{
 			title: 'Profile',
 			href: '/admin/my/settings/profile',
-			icon: '<i class="fa-regular fa-user"></i>'
+			icon: '<i class="fa-solid fa-user"></i>'
 		},
 		{
 			title: 'Account',
 			href: '/admin/my/settings/account',
-			icon: '<i class="fa-solid fa-user"></i>'
+			icon: '<i class="fa-solid fa-layer-group"></i>'
 		},
 		{
 			title: 'Security',
