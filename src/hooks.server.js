@@ -1,8 +1,9 @@
 import PocketBase from 'pocketbase'
 import { object2formdata } from '$lib/utils'
+import { PUBLIC_POCKETBASE_URL } from '$env/static/public'
 
 export const handle = async ({ event, resolve }) => {
-  event.locals.pb = new PocketBase('https://better-exabyte.pockethost.io')
+  event.locals.pb = new PocketBase(PUBLIC_POCKETBASE_URL)
   event.locals.pb.authStore.loadFromCookie(event.request.headers.get('cookie') || '')
 
   if (event.locals.pb.authStore.isValid) {
