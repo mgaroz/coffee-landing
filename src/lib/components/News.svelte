@@ -3,12 +3,12 @@
 	$: active = 'left';
 </script>
 
-<section
-	id="news"
-	class="text-color-background m-auto w-full bg-gradient-to-t from-[#1B1B1B_50%] to-[#EEE0D3_50%] pt-20"
->
-	<div class="mx-auto flex w-[95%]">
-		<div class="newsgrid">
+<section id="news" class="text-color-background m-auto w-full bg-[#EEE0D3] pt-20">
+	<h2 class="font-playfair pb-10 text-center text-7xl font-bold uppercase">
+		The <span class="text-color-gray-text">News</span>
+	</h2>
+	<div class="mx-auto flex bg-gradient-to-t from-[#1B1B1B_50%] to-[#EEE0D3_50%]">
+		<div class="newsgrid w-[95%]">
 			<div
 				class="bg-color-green text-color-white flex h-[52vmin] flex-col  rounded-3xl 
 				{active === 'left'
@@ -18,7 +18,7 @@
 				on:keypress={() => (active = 'left')}
 			>
 				<div class={active === 'left' ? 'ml-10 mr-10 mt-5 flex items-end justify-around' : ''}>
-					<h2 class="turn0 font-playfair text-5xl font-bold">News</h2>
+					<h2 class="turn0 font-playfair text-5xl font-bold">Brewing</h2>
 					<div class={active === 'left' ? 'flex w-1/4 justify-center' : 'hidden'}>
 						<img src="/img/news-coffee.svg" alt="coffee" class="h-full w-full" />
 					</div>

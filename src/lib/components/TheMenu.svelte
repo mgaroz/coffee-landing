@@ -41,7 +41,7 @@
 	<div class="text-color-background m-auto grid w-[95%] grid-cols-2 grid-rows-2 gap-8 pt-10">
 		<div>
 			<h2 class="font-playfair text-center text-7xl font-bold uppercase">
-				<span class="text-color-gray-text">The</span> Menu
+				The <span class="text-color-gray-text">Menu</span>
 			</h2>
 			<p class="font-merriweather text-color-gray-text pt-10">
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat aut fugiat voluptates
