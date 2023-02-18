@@ -26,18 +26,18 @@
 		<p class="text-sm">Change your profile and account settings</p>
 	</div>
 	<div class="bg-color-white flex w-full">
-		<div class="my-4 flex w-1/5 space-x-4 border-r-2">
-			<ul class="bg-base-100 m-4 w-56 space-y-4 rounded-2xl text-slate-600 hover:cursor-pointer">
+		<div class="flex w-1/5 space-x-4 border-r-2">
+			<ul class="bg-base-100 m-4 flex w-56 flex-col gap-10 rounded-2xl text-slate-600">
 				{#each navigation as navItem}
 					<li
-						class="rounded-2xl p-4 {active === navItem.title
+						class="rounded-2xl  {active === navItem.title
 							? 'font-bold text-slate-800'
 							: 'font-medium'} hover:font-bold"
 						on:click={() => (active = navItem.title)}
 						on:keypress={() => (active = navItem.title)}
 					>
 						{@html navItem.icon}
-						<a href={navItem.href} class="pl-4">{navItem.title}</a>
+						<a href={navItem.href} class="h-full p-4">{navItem.title}</a>
 					</li>
 				{/each}
 			</ul>
