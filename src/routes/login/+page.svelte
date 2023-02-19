@@ -12,7 +12,7 @@
 		loading = true;
 		return async ({ result }) => {
 			switch (result.type) {
-				case 'succes':
+				case 'success':
 					await invalidateAll();
 					break;
 				case 'error':
