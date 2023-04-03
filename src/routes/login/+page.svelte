@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<form
-			action="?/login"
+			action="/"
 			method="POST"
 			class="flex h-1/2 w-full flex-col items-center justify-start gap-4"
 			use:enhance={submitLogin}
@@ -76,7 +76,7 @@
 				>
 			</div>
 			<div class="relative z-0 w-[52%] text-right">
-				<a href="/reset-password" class="block appearance-none text-xs text-white hover:underline"
+				<a href="/" class="block appearance-none text-xs text-white hover:underline"
 					>Forgot password?</a
 				>
 			</div>
