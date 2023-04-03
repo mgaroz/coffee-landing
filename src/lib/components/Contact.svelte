@@ -10,13 +10,13 @@
 		</div>
 		<div class="font-merriweather flex flex-col items-center md:w-1/3 md:justify-evenly">
 			<div class="flex flex-col gap-8 text-2xl md:w-full">
-				<div class="flex justify-between">
+				<div class="2xs:gap-4 flex justify-between">
 					<p><span class="text-color-gray-text text-xl">Phone</span></p>
 					<div class="w-[250px] text-left">
 						<p>+555 555 555</p>
 					</div>
 				</div>
-				<div class="flex justify-between">
+				<div class="2xs:gap-4 flex justify-between">
 					<p><span class="text-color-gray-text text-xl">Address</span></p>
 					<div class="w-[250px] text-left">
 						<p>C. Ribera, 4, 33150 Cudillero, Asturias, Spain</p>
@@ -28,7 +28,7 @@
 						<p>info@andys.es</p>
 					</div>
 				</div>
-				<div class="flex justify-start gap-4 text-base">
+				<div class="2xs:flex-col flex justify-start gap-4 text-base md:flex-row">
 					<input
 						type="email"
 						class="bg-color-cream hover:border-b-color-background border-b-color-background focus:border-color-background border-0 border-b-[1px] focus:border-b-2 focus:outline-transparent focus:ring-0 active:border-0"

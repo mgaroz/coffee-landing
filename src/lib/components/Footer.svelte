@@ -18,7 +18,7 @@
 					/></a
 				>
 			</div>
-			<div class="border-r-2">
+			<div class="md:border-r-2">
 				<p class="p-6 leading-loose">
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ab incidunt consequuntur
 					culpa dolores earum laboriosam molestias tempore neque fugiat, qui dicta commodi ea
@@ -58,8 +58,8 @@
 					</li>
 				</ul>
 			</div>
-			<div class="font-playfair w-[30vmin] self-center">
-				<div class="text-2xl font-light">
+			<div class="font-playfair mx-auto self-center text-center md:w-[30vmin]">
+				<div class="w-full text-2xl font-light">
 					<a href="/" class="mr-2"
 						><i class="fa-brands fa-twitter duration-150 hover:scale-125" /></a
 					>
