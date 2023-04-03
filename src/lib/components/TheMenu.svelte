@@ -38,7 +38,7 @@
 </script>
 
 <section id="themenu" class="bg-color-cream mx-auto mt-20 w-full">
-	<div class="text-color-background mx-auto grid w-[95%] grid-rows-2 gap-8 pt-10 md:grid-cols-2">
+	<div class="text-color-background mx-auto grid w-[95%] grid-rows-1 gap-8 pt-10 md:grid-cols-2">
 		<div>
 			<h2 class="font-playfair heading-size text-center font-bold uppercase">
 				The <span class="text-color-gray-text">Menu</span>
@@ -54,9 +54,9 @@
 					>View Full Menu</button
 				>
 			</div>
-			<div class="h-full w-full bg-[url('/img/ill-1.svg')] bg-no-repeat" />
+			<div class="h-[300px] w-full bg-[url('/img/ill-1.svg')] bg-no-repeat" />
 		</div>
-		<div class=" col-span-1 row-span-2 mt-20 ">
+		<div class="pt-20 md:col-span-1">
 			<div
 				class="border-b-color-background font-merriweather flex justify-between border-b-2 border-solid"
 			>
