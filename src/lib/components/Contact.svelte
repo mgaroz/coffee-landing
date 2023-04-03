@@ -6,7 +6,7 @@
 	</div>
 	<div class="2xs:flex-col mx-auto mt-10 flex w-[95%] gap-16 pb-20 md:flex-row">
 		<div class="flex justify-center md:w-1/2">
-			<img src="/img/contact.svg" alt="contact us" />
+			<img src="/img/contact.svg" alt="contact us" width="406" height="306" />
 		</div>
 		<div class="font-merriweather flex flex-col items-center md:w-1/3 md:justify-evenly">
 			<div class="flex flex-col gap-8 text-2xl md:w-full">
