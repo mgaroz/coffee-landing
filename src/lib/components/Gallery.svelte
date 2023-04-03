@@ -3,6 +3,7 @@
 		<div class="group">
 			<div class="overflow-hidden rounded-xl">
 				<img
+					loading="lazy"
 					class="h-auto object-cover duration-150 group-hover:scale-110 md:w-full"
 					src="/img/pic-1-480.webp"
 					alt="Brew"
@@ -16,6 +17,7 @@
 		<div class="group">
 			<div class="overflow-hidden rounded-xl">
 				<img
+					loading="lazy"
 					class="h-auto object-cover duration-150 group-hover:scale-110"
 					src="/img/pic-2-480.webp"
 					alt="Barista"
@@ -29,6 +31,7 @@
 		<div class="group">
 			<div class="overflow-hidden rounded-xl">
 				<img
+					loading="lazy"
 					class="h-auto object-cover duration-150 group-hover:scale-110"
 					src="/img/pic-3-480.webp"
 					alt="Beans"
@@ -42,6 +45,7 @@
 		<div class="group">
 			<div class="overflow-hidden rounded-xl">
 				<img
+					loading="lazy"
 					class="h-auto object-cover duration-150 group-hover:scale-110"
 					src="/img/pic-4-480.webp"
 					alt="Beans2"

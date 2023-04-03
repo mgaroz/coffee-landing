@@ -13,7 +13,7 @@
 	<div class="mx-auto flex w-[95%] items-center justify-between bg-[#ffffff00] pt-2 pb-2">
 		<div class="font-merriweather text-color-white">
 			<a href="/" on:click={() => activeItem.set('home')}>
-				<img src="/img/logo.png" alt="logo" class="max-h-12" />
+				<img src="/img/logo.webp" alt="logo" class="max-h-12" />
 			</a>
 		</div>
 		<div class="text-color-white 2xs:hidden gap-8 md:flex">
