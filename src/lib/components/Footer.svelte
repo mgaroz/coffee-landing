@@ -1,6 +1,11 @@
 <script>
 	import { activeItem } from '$lib/stores.js';
 
+	import instagram from '$lib/img/instagram.svg';
+	import linkedin from '$lib/img/linkedin-in.svg';
+	import twitter from '$lib/img/twitter.svg';
+	import youtube from '$lib/img/youtube.svg';
+
 	function setActiveItem(item) {
 		activeItem.set(item);
 	}
@@ -61,17 +66,33 @@
 			<div class="font-playfair mx-auto self-center text-center md:w-[30vmin]">
 				<div class="w-full text-2xl font-light">
 					<a href="/" class="mr-2"
-						><i class="fa-brands fa-twitter duration-150 hover:scale-125" /></a
-					>
+						><img
+							src={twitter}
+							alt="twitter"
+							class="inline-block h-6 w-6 text-white duration-150 hover:scale-125"
+						/>
+					</a>
 					<a href="/" class="mr-2"
-						><i class="fa-brands fa-youtube duration-150 hover:scale-125" /></a
-					>
+						><img
+							src={youtube}
+							alt="youtube"
+							class="inline-block h-6 w-6 text-white duration-150 hover:scale-125"
+						/>
+					</a>
 					<a href="/" class="mr-2"
-						><i class="fa-brands fa-linkedin-in duration-150 hover:scale-125" /></a
-					>
+						><img
+							src={linkedin}
+							alt="linkedin"
+							class="inline-block h-6 w-6 text-white duration-150 hover:scale-125"
+						/>
+					</a>
 					<a href="/" class="mr-2"
-						><i class="fa-brands fa-instagram duration-150 hover:scale-125" /></a
-					>
+						><img
+							src={instagram}
+							alt="instagram"
+							class="inline-block h-6 w-6 text-white duration-150 hover:scale-125"
+						/>
+					</a>
 				</div>
 			</div>
 		</div>
