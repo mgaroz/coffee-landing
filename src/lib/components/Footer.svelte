@@ -19,7 +19,9 @@
 					<img
 						src="/img/logo.webp"
 						alt="logo_footer"
-						class="m-auto h-auto w-[15vmin] cursor-pointer"
+						class="mx-auto h-auto w-[15vmin] cursor-pointer"
+						width="144px"
+						height="90px"
 					/></a
 				>
 			</div>
