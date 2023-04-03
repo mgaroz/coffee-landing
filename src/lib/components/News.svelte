@@ -4,7 +4,7 @@
 </script>
 
 <section id="news" class="text-color-background m-auto w-full bg-[#EEE0D3] pt-20">
-	<h2 class="font-playfair pb-10 text-center text-7xl font-bold uppercase">
+	<h2 class="font-playfair heading-size pb-10 text-center font-bold uppercase">
 		The <span class="text-color-gray-text">News</span>
 	</h2>
 	<div class="mx-auto flex bg-gradient-to-t from-[#1B1B1B_50%] to-[#EEE0D3_50%]">
@@ -124,5 +124,9 @@
 	.shine:hover:before {
 		left: 275px;
 		background: rgba(255, 255, 255, 0.15);
+	}
+
+	.heading-size {
+		font-size: clamp(2.5rem, 1.8333rem + 2.963vw, 4.5rem);
 	}
 </style>

@@ -3,15 +3,15 @@
 >
 	<div class="relative mx-auto h-full bg-gradient-to-t from-[#1b1b1b_5%] via-[#FFFFFF00_65%]">
 		<div
-			class="2xs:flex 2xs:flex-col 2xs:justify-center 2xs:items-center mx-auto h-full w-2/3 gap-6"
+			class="2xs:flex 2xs:flex-col 2xs:justify-center 2xs:items-center mx-auto h-full gap-6 md:w-2/3"
 		>
 			<div class="flex justify-center">
-				<h1 class="text-color-white font-merriweather w-[85%] text-7xl uppercase">
+				<h1 class="text-color-white font-merriweather hero-title w-[85%] uppercase">
 					A truly outstanding coffee experience
 				</h1>
 			</div>
 			<div>
-				<p class="text-color-white mx-auto w-3/4 text-center">
+				<p class="text-color-white mx-auto w-[85%] md:w-3/4 md:text-center">
 					One of the most striking features of this problem is that the initial progress in the
 					feedback system becomes even more complex when compared with The Bounce of Intellectual
 					Software
@@ -26,3 +26,9 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.hero-title {
+		font-size: clamp(2.5rem, 1.8333rem + 2.963vw, 4.5rem);
+	}
+</style>

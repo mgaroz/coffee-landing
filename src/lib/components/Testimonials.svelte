@@ -1,6 +1,6 @@
 <section id="what-people-say" class="bg-color-background text-color-white mx-auto w-full pt-20">
 	<div class="min-h-96 mx-auto w-[95%]">
-		<h2 class="font-playfair text-center text-7xl font-bold uppercase">
+		<h2 class="font-playfair heading-size text-center font-bold uppercase">
 			From <span class="text-color-gray-text">our customers</span>
 		</h2>
 		<p class="text-color-gray-text font-merriweather mx-auto mt-10 max-w-[80vmin] text-sm">
@@ -80,3 +80,9 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.heading-size {
+		font-size: clamp(2.5rem, 1.8333rem + 2.963vw, 4.5rem);
+	}
+</style>

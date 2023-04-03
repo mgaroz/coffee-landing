@@ -1,6 +1,6 @@
 <section id="contact" class="bg-color-cream mx-auto mt-20 w-full pt-20">
 	<div class="mx-auto w-[95%]">
-		<h2 class="font-playfair text-center text-7xl font-bold uppercase">
+		<h2 class="font-playfair heading-size text-center font-bold uppercase">
 			Contact <span class="text-color-gray-text">Us</span>
 		</h2>
 	</div>
@@ -44,3 +44,9 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.heading-size {
+		font-size: clamp(2.5rem, 1.8333rem + 2.963vw, 4.5rem);
+	}
+</style>

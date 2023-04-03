@@ -40,7 +40,7 @@
 <section id="themenu" class="bg-color-cream mx-auto mt-20 w-full">
 	<div class="text-color-background mx-auto grid w-[95%] grid-rows-2 gap-8 pt-10 md:grid-cols-2">
 		<div>
-			<h2 class="font-playfair text-center text-7xl font-bold uppercase">
+			<h2 class="font-playfair heading-size text-center font-bold uppercase">
 				The <span class="text-color-gray-text">Menu</span>
 			</h2>
 			<p class="font-merriweather text-color-gray-text pt-10">
@@ -79,3 +79,9 @@
 	/>
 	<br />
 </section>
+
+<style>
+	.heading-size {
+		font-size: clamp(2.5rem, 1.8333rem + 2.963vw, 4.5rem);
+	}
+</style>
