@@ -10,7 +10,6 @@
 	class="border-b-color-background font-merriweather flex cursor-pointer justify-between border-b-2 border-solid text-xl font-semibold leading-loose"
 	on:click={toggle}
 	on:keypress={toggle}
-	aria-expanded={isOpen}
 >
 	<p class="duration-150 hover:indent-2">{coffee}</p>
 	<p>€{details.price}</p>
