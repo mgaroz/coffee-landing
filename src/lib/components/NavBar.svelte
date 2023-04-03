@@ -10,13 +10,13 @@
 	class="fixed left-0 right-0 z-10 m-auto w-[1440px] bg-[#ffffff00] duration-200"
 	class:frosty={y >= 100}
 >
-	<div class="mr-auto ml-auto flex w-[95%] items-center justify-between bg-[#ffffff00] pt-2 pb-2">
+	<div class="mx-auto flex w-[95%] items-center justify-between bg-[#ffffff00] pt-2 pb-2">
 		<div class="font-merriweather text-color-white">
 			<a href="/" on:click={() => activeItem.set('home')}>
 				<img src="/img/logo.png" alt="logo" class="max-h-12" />
 			</a>
 		</div>
-		<div class="text-color-white flex gap-8">
+		<div class="text-color-white 2xs:hidden gap-8 md:flex">
 			<a
 				href="/"
 				on:click={() => activeItem.set('home')}

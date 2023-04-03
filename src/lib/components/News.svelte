@@ -1,5 +1,5 @@
 <script>
-	let active;
+	// let active;
 	$: active = 'left';
 </script>
 
@@ -8,16 +8,16 @@
 		The <span class="text-color-gray-text">News</span>
 	</h2>
 	<div class="mx-auto flex bg-gradient-to-t from-[#1B1B1B_50%] to-[#EEE0D3_50%]">
-		<div class="newsgrid w-[95%]">
+		<div class="newsgrid 2xs:flex-col 2xs:items-center w-[95%] md:flex-row">
 			<div
-				class="bg-color-green text-color-white flex h-[52vmin] flex-col  rounded-3xl 
+				class="bg-color-green text-color-white flex h-[52vmin] flex-col rounded-3xl 
 				{active === 'left'
 					? 'clicked w-[80vmin] justify-around'
 					: 'unclicked container items-center justify-center'}"
 				on:click={() => (active = 'left')}
 				on:keypress={() => (active = 'left')}
 			>
-				<div class={active === 'left' ? 'ml-10 mr-10 mt-5 flex items-end justify-around' : ''}>
+				<div class={active === 'left' ? 'mx-10 mt-5 flex items-end justify-around' : ''}>
 					<h2 class="turn0 font-playfair text-5xl font-bold">Brewing</h2>
 					<div class={active === 'left' ? 'flex w-1/4 justify-center' : 'hidden'}>
 						<img src="/img/news-coffee.svg" alt="coffee" class="h-full w-full" />
@@ -25,7 +25,7 @@
 				</div>
 				<div
 					class={active === 'left'
-						? 'ml-10 mr-10 mt-8 flex items-center justify-between pb-10'
+						? 'mx-10 mt-8 flex items-center justify-between pb-10'
 						: 'hidden'}
 				>
 					<p class="max-w-[50vmin]">
@@ -41,19 +41,33 @@
 			</div>
 			<div
 				class="text-color-white shine relative flex h-[52vmin] cursor-pointer items-center justify-center overflow-hidden rounded-3xl bg-[#252525]
-				{active === 'middle' ? 'clicked w-[80vmin]' : 'unclicked container'}"
+				{active === 'middle'
+					? 'clicked md:w-[80vmin]'
+					: 'unclicked 2xs:w-[80vmin] transition-all duration-300 md:w-[8rem]'}"
 				on:click={() => (active = 'middle')}
 				on:keypress={() => (active = 'middle')}
 			>
-				<h2 class="turn0 text-5xl font-bold uppercase">Coffee Shop</h2>
+				<h2
+					class="text-5xl font-bold uppercase {active === 'middle'
+						? 'turn0'
+						: 'whitespace-nowrap md:rotate-[-0.25turn]'}"
+				>
+					Coffee Shop
+				</h2>
 			</div>
 			<div
-				class="text-color-white shine relative flex h-[52vmin] cursor-pointer items-center justify-center overflow-hidden rounded-3xl bg-[#252525]
-				{active === 'right' ? 'clicked w-[80vmin]' : 'unclicked container'}"
+				class="text-color-white shine relative flex h-[52vmin] cursor-pointer items-center justify-center overflow-hidden rounded-3xl bg-[#252525] transition-all duration-300
+				{active === 'right' ? 'clicked md:w-[80vmin]' : 'unclicked 2xs:w-[80vmin] md:w-[8rem]'}"
 				on:click={() => (active = 'right')}
 				on:keypress={() => (active = 'right')}
 			>
-				<h2 class="turn0 text-5xl font-bold uppercase">Restaurant</h2>
+				<h2
+					class="{active === 'right'
+						? 'turn0'
+						: 'whitespace-nowrap md:rotate-[-0.25turn]'} text-5xl font-bold uppercase"
+				>
+					Restaurant
+				</h2>
 			</div>
 		</div>
 	</div>

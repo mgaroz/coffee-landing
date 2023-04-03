@@ -37,8 +37,8 @@
 	};
 </script>
 
-<section id="themenu" class="bg-color-cream m-auto mt-20 w-full">
-	<div class="text-color-background m-auto grid w-[95%] grid-cols-2 grid-rows-2 gap-8 pt-10">
+<section id="themenu" class="bg-color-cream mx-auto mt-20 w-full">
+	<div class="text-color-background mx-auto grid w-[95%] grid-rows-2 gap-8 pt-10 md:grid-cols-2">
 		<div>
 			<h2 class="font-playfair text-center text-7xl font-bold uppercase">
 				The <span class="text-color-gray-text">Menu</span>
@@ -70,12 +70,12 @@
 		</div>
 	</div>
 	<br />
-	<div class="text-color-gray-text font-merriweather m-auto mt-4 flex w-[95%] justify-between">
+	<div class="text-color-gray-text font-merriweather mx-auto mt-4 flex w-[95%] justify-between">
 		<h2>Menu</h2>
 		<h2>03</h2>
 	</div>
 	<div
-		class="border-b-color-gray-text m-auto mt-4 w-[95%] border-t-0 border-l-0 border-r-0 border-b-2"
+		class="border-b-color-gray-text mx-auto mt-4 w-[95%] border-t-0 border-l-0 border-r-0 border-b-2"
 	/>
 	<br />
 </section>

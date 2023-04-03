@@ -18,6 +18,10 @@ module.exports = {
         'color-white': '#fff',
         'color-gray-text': '#7B7B7B',
       },
+      screens: {
+        'xs': '475px',
+        '2xs': '360px'
+      }
     },
   },
   plugins: [

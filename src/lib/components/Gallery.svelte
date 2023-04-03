@@ -1,4 +1,4 @@
-<section id="gallery" class="m-auto mt-20 w-[95%]">
+<section id="gallery" class="mx-auto mt-20 w-[95%]">
 	<div class="flex gap-8">
 		<div class="group">
 			<div class="overflow-hidden rounded-xl">
