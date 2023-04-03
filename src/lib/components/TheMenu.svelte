@@ -56,7 +56,7 @@
 			</div>
 			<div class="h-[300px] w-full bg-[url('/img/ill-1.svg')] bg-no-repeat" />
 		</div>
-		<div class="pt-20 md:col-span-1">
+		<div class="md:col-span-1 md:pt-20">
 			<div
 				class="border-b-color-background font-merriweather flex justify-between border-b-2 border-solid"
 			>
