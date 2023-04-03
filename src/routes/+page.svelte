@@ -12,7 +12,7 @@
 		<Gallery />
 		<TheMenu />
 		<News />
-		<!-- <Testimonials /> -->
+		<Testimonials />
 		<Contact />
 	</main>
 	<footer>
