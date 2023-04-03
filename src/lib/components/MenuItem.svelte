@@ -22,6 +22,7 @@
 		<p class="font-playfair text-color-gray-text w-1/2 text-xl font-bold">{details.description}</p>
 		<div class="h-[25vmin] w-2/3 overflow-hidden rounded-xl shadow-md">
 			<img
+				loading="lazy"
 				src={`${details.img}.webp`}
 				alt={coffee}
 				class="block h-full w-full object-cover object-center"
