@@ -2,6 +2,29 @@
 	import { activeItem } from '$lib/stores.js';
 
 	let y = 0;
+
+	let menuItems = [
+		{
+			name: 'Home',
+			link: '/'
+		},
+		{
+			name: 'About',
+			link: '#about'
+		},
+		{
+			name: 'Menu',
+			link: '#themenu'
+		},
+		{
+			name: 'News',
+			link: '#news'
+		},
+		{
+			name: 'Contact',
+			link: '#contact'
+		}
+	];
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -17,31 +40,13 @@
 			</a>
 		</div>
 		<div class="text-color-white 2xs:hidden gap-8 md:flex">
-			<a
-				href="/"
-				on:click={() => activeItem.set('home')}
-				class={$activeItem === 'home' ? 'active' : 'attiv'}>Home</a
-			>
-			<a
-				href="#about"
-				on:click={() => activeItem.set('about')}
-				class={$activeItem === 'about' ? 'active' : 'attiv'}>About</a
-			>
-			<a
-				href="#themenu"
-				on:click={() => activeItem.set('themenu')}
-				class={$activeItem === 'themenu' ? 'active' : 'attiv'}>Menu</a
-			>
-			<a
-				href="#news"
-				on:click={() => activeItem.set('news')}
-				class={$activeItem === 'news' ? 'active' : 'attiv'}>News</a
-			>
-			<a
-				href="#contact"
-				on:click={() => activeItem.set('contact')}
-				class={$activeItem === 'contact' ? 'active' : 'attiv'}>Contact</a
-			>
+			{#each menuItems as { name, link }}
+				<a
+					href={link}
+					on:click={() => activeItem.set(name.toLowerCase())}
+					class={$activeItem === name.toLowerCase() ? 'active' : 'attiv'}>{name}</a
+				>
+			{/each}
 		</div>
 		<div class="flex gap-2">
 			<a
