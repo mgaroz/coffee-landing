@@ -6,7 +6,7 @@
 	import twitter from '$lib/img/twitter.svg';
 	import youtube from '$lib/img/youtube.svg';
 
-	export let socials = [
+	let socials = [
 		{
 			name: 'instagram',
 			link: 'https://www.instagram.com/',
@@ -26,6 +26,29 @@
 			name: 'youtube',
 			link: 'https://www.youtube.com/',
 			icon: youtube
+		}
+	];
+
+	let menuItems = [
+		{
+			name: 'Home',
+			link: '/'
+		},
+		{
+			name: 'About',
+			link: '#about'
+		},
+		{
+			name: 'Menu',
+			link: '#themenu'
+		},
+		{
+			name: 'News',
+			link: '#news'
+		},
+		{
+			name: 'Contact',
+			link: '#contact'
 		}
 	];
 
@@ -57,35 +80,15 @@
 			</div>
 			<div class="ml-10 mr-10 self-center text-center">
 				<ul class="font-playfair columns-2 leading-loose">
-					<li><a href="/" class="duration-150 hover:underline">Home</a></li>
-					<li>
-						<a
-							href="#about"
-							class="duration-150 hover:underline"
-							on:click={() => setActiveItem('about')}>About</a
-						>
-					</li>
-					<li>
-						<a
-							href="#themenu"
-							class="duration-150 hover:underline"
-							on:click={() => setActiveItem('themenu')}>Menu</a
-						>
-					</li>
-					<li>
-						<a
-							href="#news"
-							class="duration-150 hover:underline"
-							on:click={() => setActiveItem('news')}>News</a
-						>
-					</li>
-					<li>
-						<a
-							href="#contact"
-							class="duration-150 hover:underline"
-							on:click={() => setActiveItem('contact')}>Contact</a
-						>
-					</li>
+					{#each menuItems as { name, link }}
+						<li>
+							<a
+								href={link}
+								class="duration-150 hover:underline"
+								on:click={() => setActiveItem(name.toLowerCase())}>{name}</a
+							>
+						</li>
+					{/each}
 				</ul>
 			</div>
 			<div class="font-playfair mx-auto self-center text-center md:w-[30vmin]">
