@@ -6,6 +6,29 @@
 	import twitter from '$lib/img/twitter.svg';
 	import youtube from '$lib/img/youtube.svg';
 
+	export let socials = [
+		{
+			name: 'instagram',
+			link: 'https://www.instagram.com/',
+			icon: instagram
+		},
+		{
+			name: 'linkedin',
+			link: 'https://www.linkedin.com/',
+			icon: linkedin
+		},
+		{
+			name: 'twitter',
+			link: 'https://twitter.com/',
+			icon: twitter
+		},
+		{
+			name: 'youtube',
+			link: 'https://www.youtube.com/',
+			icon: youtube
+		}
+	];
+
 	function setActiveItem(item) {
 		activeItem.set(item);
 	}
@@ -67,34 +90,15 @@
 			</div>
 			<div class="font-playfair mx-auto self-center text-center md:w-[30vmin]">
 				<div class="w-full text-2xl font-light">
-					<a href="/" class="mr-2"
-						><img
-							src={twitter}
-							alt="twitter"
-							class="inline-block h-6 w-6 text-white duration-150 hover:scale-125"
-						/>
-					</a>
-					<a href="/" class="mr-2"
-						><img
-							src={youtube}
-							alt="youtube"
-							class="inline-block h-6 w-6 text-white duration-150 hover:scale-125"
-						/>
-					</a>
-					<a href="/" class="mr-2"
-						><img
-							src={linkedin}
-							alt="linkedin"
-							class="inline-block h-6 w-6 text-white duration-150 hover:scale-125"
-						/>
-					</a>
-					<a href="/" class="mr-2"
-						><img
-							src={instagram}
-							alt="instagram"
-							class="inline-block h-6 w-6 text-white duration-150 hover:scale-125"
-						/>
-					</a>
+					{#each socials as { name, link, icon }}
+						<a href={link} target="_blank" class="mr-2" rel="noreferrer">
+							<img
+								src={icon}
+								alt={name}
+								class="inline-block h-6 w-6 text-white duration-150 hover:scale-125"
+							/>
+						</a>
+					{/each}
 				</div>
 			</div>
 		</div>
